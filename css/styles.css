@@ -97,6 +97,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
@@ -203,6 +204,7 @@ img {
   text-decoration: none;
   cursor: pointer;
 
+  transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -235,6 +237,7 @@ img {
   border-radius: 4px;
   border: none;
 
+  transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -381,8 +384,10 @@ img {
   width: 44px;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
   fill: var(--color-client);
 
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -395,7 +400,7 @@ img {
 .social-icon:focus {
   background-color: var(--accent-color);
   fill: var(--background-color);
-  border-radius: 50%;
+  
 
 
 }
@@ -475,6 +480,7 @@ img {
   fill: var(--color-client);
 
 
+  transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
@@ -542,6 +548,7 @@ img {
   padding-left: 0px;
   margin-bottom: 9px;
 
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -561,6 +568,7 @@ img {
   color: var(--contact-footer-color);
   font-style: normal;
 
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -624,6 +632,7 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -706,13 +715,6 @@ img {
   width: 100%;
   height: 100%;
   
-
-  
-  
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 .thumb{
@@ -729,8 +731,6 @@ img {
 .card-project:focus .thumb::before,
 .card-project:focus .item-overlay{
   transform: translateY(0);
-  
-  
 }
 
 
@@ -759,8 +759,10 @@ img {
   color: var(--color-white);
 
   
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, background-color;
+  transform: translateY(101%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-overlay{
@@ -809,6 +811,7 @@ img {
   text-align: center;
   border: none;
 
+  transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
